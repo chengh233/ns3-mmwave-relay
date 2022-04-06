@@ -353,8 +353,8 @@ namespace ns3 {
 	/*
 	 * Out-of-band backhaul pre-computed optimal scheduling result.
 	 */
-	uint32_t m_symAvilStart;  // the first available symbol index in one subframe.  
-	uint32_t m_symAvilEnd;    // the last available symbol index in one subframe.
+	uint32_t m_symAvailStart;  // the first available symbol index in one subframe.  
+	uint32_t m_symAvailEnd;    // the last available symbol index in one subframe.
     };
 
 }
