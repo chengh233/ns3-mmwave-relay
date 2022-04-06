@@ -9,7 +9,15 @@ Note that, we will develop a dedicated out-of-band backhaul module based on the 
 
 If you have any questions related to this module, please email us at qianghu@gatech.edu or hqfrank@gmail.com.
 
+# Usage
 
+```
+./waf configure --disable-python --enable-examples && ./waf build
+
+# redirect output to the file "output.log" and redirect error message to stander output
+./waf --run scratch/mmwave-replay-path > output.log 2>&1
+
+```
 
 # IAB feature for the ns-3 mmWave module #
 Integrated Access and Backhaul (IAB) is a 3GPP Study Item on the possibility of using the same network equipment and resources for both access and backhaul.
