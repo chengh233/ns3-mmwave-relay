@@ -1,1 +1,0 @@
-set label "4" at 75,75 left font "Helvetica,8" textcolor rgb "black" front point pt 1 ps 0.3 lc rgb "black" offset 0,0
