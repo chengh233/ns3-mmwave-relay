@@ -1,0 +1,16 @@
+set building object 1 rect. from 0,0 to 70,70 front fs empty 
+set building object 2 rect. from 80,0 to 150,70 front fs empty 
+set building object 3 rect. from 160,0 to 230,70 front fs empty 
+set building object 4 rect. from 240,0 to 310,70 front fs empty 
+set building object 5 rect. from 0,80 to 70,150 front fs empty 
+set building object 6 rect. from 80,80 to 150,150 front fs empty 
+set building object 7 rect. from 160,80 to 230,150 front fs empty 
+set building object 8 rect. from 240,80 to 310,150 front fs empty 
+set building object 9 rect. from 0,160 to 70,230 front fs empty 
+set building object 10 rect. from 80,160 to 150,230 front fs empty 
+set building object 11 rect. from 160,160 to 230,230 front fs empty 
+set building object 12 rect. from 240,160 to 310,230 front fs empty 
+set building object 13 rect. from 0,240 to 70,310 front fs empty 
+set building object 14 rect. from 80,240 to 150,310 front fs empty 
+set building object 15 rect. from 160,240 to 230,310 front fs empty 
+set building object 16 rect. from 240,240 to 310,310 front fs empty 

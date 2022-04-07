@@ -1,0 +1,686 @@
+Waf: Entering directory `/home/chengh233/ns3-mmwave-relay/build'
+Waf: Leaving directory `/home/chengh233/ns3-mmwave-relay/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.651s)
+MmWaveHelper:MmWaveHelper(0xaaab14cd7ed0)
+MmWaveHelper:SetPathlossModelType(0xaaab14cd7ed0, "ns3::MmWave3gppPropagationLossModel")
+MmWaveHelper:SetChannelModelType(0xaaab14cd7ed0, "ns3::MmWave3gppChannel")
+MmWaveHelper:SetSchedulerType(0xaaab14cd7ed0, "ns3::MmWaveFlexTtiMacScheduler")
+MmWaveHelper:SetLteSchedulerType(0xaaab14cd7ed0, "ns3::PfFfMacScheduler")
+MmWaveHelper:SetLteFfrAlgorithmType(0xaaab14cd7ed0, "ns3::LteFrNoOpAlgorithm")
+MmWaveHelper:SetLteHandoverAlgorithmType(0xaaab14cd7ed0, "ns3::NoOpHandoverAlgorithm")
+MmWaveHelper:SetLtePathlossModelType(0xaaab14cd7ed0, "ns3::FriisPropagationLossModel")
+MmWaveHelper:SetPathlossModelType(0xaaab14cd7ed0, "ns3::MmWave3gppBuildingsPropagationLossModel")
+MmWavePointToPointEpcHelper:MmWavePointToPointEpcHelper(0xaaab14c6c5d0)
++0.000000000s -1 MmWaveHelper:DoInitialize(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveHelper:DoInitialize(): 0xaaab14cd7ed0 using a PropagationLossModel
++0.000000000s -1 MmWaveHelper:DoInitialize(): 0xaaab14cd7ed0 using a PropagationLossModel in DL
++0.000000000s -1 MmWaveHelper:DoInitialize(): 0xaaab14cd7ed0 using a PropagationLossModel in UL
+---- mmh UseIdealRrc 0
+wired 155:235:20 iab1 155:155:20 iab2 75:155:20 iab3 75:235:20 iab4 155:235:20 totalArea 96100
++0.000000000s -1 MmWaveHelper:InstallEnbDevice(0xaaab14cd7ed0)
+eNB 1 MmWaveSpectrumPhy 0xaaab14ce4eb0
+Number of Harq processes 100 Harq time out 20
++0.000000000s -1 MmWaveHelper:InstallSingleEnbDevice(): set the propagation model frequencies
++0.000000000s -1 MmWaveHelper:InstallSingleEnbDevice(): Channel Frequency: 2.8e+10
++0.000000000s -1 MmWaveHelper:InstallSingleEnbDevice(): Propagation model does not have a Frequency attribute
++0.000000000s -1 MmWaveHelper:InstallSingleEnbDevice(): adding this eNB to the EPC
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(0xaaab14c6c5d0, 0xaaab14ce3b20, 0xaaab14ce69b0, 1)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): number of Ipv4 ifaces of the eNB after node creation: 1
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): number of Ipv4 ifaces of the eNB after installing p2p dev: 1
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): number of Ipv4 ifaces of the eNB after assigning Ipv4 addr to S1 dev: 2
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): number of Ipv4 ifaces of the eNB after installing p2p dev: 2
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): number of Ipv4 ifaces of the eNB after assigning Ipv4 addr to S1 dev: 3
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): create EpcEnbApplication
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): enb: 0xaaab14ce3b20, enb->GetApplication (0): 0xaaab14cf1790
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): Create EpcX2 entity
++0.000000000s -1 MmWavePointToPointEpcHelper:AddEnb(): connect S1-AP interface
++0.000000000s -1 MmWaveHelper:InstallIabDevice(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveIabNetDevice:MmWaveIabNetDevice(0xaaab14cedc30)
++0.000000000s -1 MmWaveIabNetDevice:SetReceiveCallback(0xaaab14cedc30)
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(): Install IAB device with backhaul IMSI 1 and access cellId 2
+eNB 2 MmWaveSpectrumPhy 0xaaab14cf6e80
+Number of Harq processes 100 Harq time out 20
++0.000000000s -1 MmWaveIabNetDevice:DoInitialize(0xaaab14cedc30)
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(0xaaab14cedc30)
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(): 0xaaab14cedc30 Updating configuration: IMSI 1
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(): 0xaaab14cedc30 Configure cell 2
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(): adding this IAB to the EPC
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(0xaaab14c6c5d0, 0xaaab14ce3d00, 0xaaab14cedc30, 2, 1)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): create EpcIabApplication
++0.000000000s -1 EpcIabApplication:EpcIabApplication(0xaaab14d012e0, 0xaaab14d00e00, 0xaaab14d010c0, 0xaaab14d00270, 0xaaab14d00c90, 2, 1)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): iab: 0xaaab14ce3d00, iab->GetApplication (0): 0xaaab14d012e0
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): Create EpcX2 entity
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): connect S1-AP interface
++0.000000000s -1 MmWaveIabNetDevice:SetAddress(0xaaab14cedc30, 03-06-00:00:00:00:00:09)
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveIabNetDevice:MmWaveIabNetDevice(0xaaab14bd9c40)
++0.000000000s -1 MmWaveIabNetDevice:SetReceiveCallback(0xaaab14bd9c40)
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(): Install IAB device with backhaul IMSI 2 and access cellId 3
+eNB 3 MmWaveSpectrumPhy 0xaaab14d07530
+Number of Harq processes 100 Harq time out 20
++0.000000000s -1 MmWaveIabNetDevice:DoInitialize(0xaaab14bd9c40)
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(0xaaab14bd9c40)
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(): 0xaaab14bd9c40 Updating configuration: IMSI 2
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(): 0xaaab14bd9c40 Configure cell 3
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(): adding this IAB to the EPC
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(0xaaab14c6c5d0, 0xaaab14ce3e10, 0xaaab14bd9c40, 3, 2)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): create EpcIabApplication
++0.000000000s -1 EpcIabApplication:EpcIabApplication(0xaaab14d11460, 0xaaab14d11020, 0xaaab14d11290, 0xaaab14d10490, 0xaaab14d10eb0, 3, 2)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): iab: 0xaaab14ce3e10, iab->GetApplication (0): 0xaaab14d11460
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): Create EpcX2 entity
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): connect S1-AP interface
++0.000000000s -1 MmWaveIabNetDevice:SetAddress(0xaaab14bd9c40, 03-06-00:00:00:00:00:0a)
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveIabNetDevice:MmWaveIabNetDevice(0xaaab14d0a2b0)
++0.000000000s -1 MmWaveIabNetDevice:SetReceiveCallback(0xaaab14d0a2b0)
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(): Install IAB device with backhaul IMSI 3 and access cellId 4
+eNB 4 MmWaveSpectrumPhy 0xaaab14d17610
+Number of Harq processes 100 Harq time out 20
++0.000000000s -1 MmWaveIabNetDevice:DoInitialize(0xaaab14d0a2b0)
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(0xaaab14d0a2b0)
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(): 0xaaab14d0a2b0 Updating configuration: IMSI 3
++0.000000000s -1 MmWaveIabNetDevice:UpdateConfig(): 0xaaab14d0a2b0 Configure cell 4
++0.000000000s -1 MmWaveHelper:InstallSingleIabDevice(): adding this IAB to the EPC
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(0xaaab14c6c5d0, 0xaaab14ce3f50, 0xaaab14d0a2b0, 4, 3)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): create EpcIabApplication
++0.000000000s -1 EpcIabApplication:EpcIabApplication(0xaaab14d21630, 0xaaab14d211f0, 0xaaab14d21460, 0xaaab14d20660, 0xaaab14d21080, 4, 3)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): iab: 0xaaab14ce3f50, iab->GetApplication (0): 0xaaab14d21630
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): Create EpcX2 entity
++0.000000000s -1 MmWavePointToPointEpcHelper:AddIab(): connect S1-AP interface
++0.000000000s -1 MmWaveIabNetDevice:SetAddress(0xaaab14d0a2b0, 03-06-00:00:00:00:00:0b)
++0.000000000s -1 MmWaveHelper:InstallUeDevice(0xaaab14cd7ed0)
++0.000000000s -1 MmWavePointToPointEpcHelper:AddUe(0xaaab14c6c5d0, 4, 0xaaab14d21e90)
++0.000000000s -1 MmWaveHelper:InstallSingleUeDevice(): Install UE with IMSI 4
+number of IAB devs 3 num of possibleBaseStations 4
++0.000000000s -1 MmWaveHelper:AttachIabToClosestWiredEnb(0xaaab14cd7ed0)
+SetBeamformingVector between ENB 0xaaab14ce69b0 and IAB device 0xaaab14cedc30
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between IAB 0xaaab14cedc30 and IAB device 0xaaab14cedc30
+SetBeamformingVector between IAB 0xaaab14cedc30 and IAB device 0xaaab14bd9c40
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between IAB 0xaaab14cedc30 and IAB device 0xaaab14d0a2b0
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 1
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 2
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 3
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 4
+UE register to enb 1
+UE register to enb 1
++0.000000000s -1 MmWavePointToPointEpcHelper:ActivateIabBearer(0xaaab14c6c5d0, 0xaaab14cedc30, 1)
+SetBeamformingVector between ENB 0xaaab14ce69b0 and IAB device 0xaaab14bd9c40
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between IAB 0xaaab14bd9c40 and IAB device 0xaaab14cedc30
+SetBeamformingVector between IAB 0xaaab14bd9c40 and IAB device 0xaaab14bd9c40
+SetBeamformingVector between IAB 0xaaab14bd9c40 and IAB device 0xaaab14d0a2b0
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 1
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 2
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 3
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 4
+UE register to enb 2
+UE register to enb 2
++0.000000000s -1 MmWavePointToPointEpcHelper:ActivateIabBearer(0xaaab14c6c5d0, 0xaaab14bd9c40, 2)
+SetBeamformingVector between ENB 0xaaab14ce69b0 and IAB device 0xaaab14d0a2b0
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between IAB 0xaaab14d0a2b0 and IAB device 0xaaab14cedc30
+SetBeamformingVector between IAB 0xaaab14d0a2b0 and IAB device 0xaaab14bd9c40
+SetBeamformingVector between IAB 0xaaab14d0a2b0 and IAB device 0xaaab14d0a2b0
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(0xaaab14cd7ed0)
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 1
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 2
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 3
++0.000000000s -1 MmWaveHelper:AttachIabToClosestEnb(): mmWaveCellId 4
+UE register to enb 1
+UE register to enb 1
++0.000000000s -1 MmWavePointToPointEpcHelper:ActivateIabBearer(0xaaab14c6c5d0, 0xaaab14d0a2b0, 3)
++0.000000000s -1 MmWaveHelper:AttachToClosestEnbWithDelay(0xaaab14cd7ed0)
+SetBeamformingVector between UE 0xaaab14d21e90 and enbDevice 0xaaab14ce69b0
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between UE 0xaaab14d21e90 and IAB device 0xaaab14cedc30
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between UE 0xaaab14d21e90 and IAB device 0xaaab14bd9c40
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
+SetBeamformingVector between UE 0xaaab14d21e90 and IAB device 0xaaab14d0a2b0
+UMi-StreetCanyon scenario, channel condition is fixed to be l, h_BS=20,h_UT=20
++0.000000000s -1 MmWaveHelper:EnableUlPhyTrace()
+m_lteOutputFilename LteSwitchStats.txt
+num matches 0 path /NodeList/3/DeviceList/0/LteEnbRrc/UeMap/1/DataRadioBearerCreated
+num matches 0 path /NodeList/3/DeviceList/0/LteEnbRrc/UeMap/1/StateTransition
+num matches 0 path /NodeList/3/DeviceList/0/LteEnbRrc/UeMap/2/DataRadioBearerCreated
+num matches 0 path /NodeList/3/DeviceList/0/LteEnbRrc/UeMap/2/StateTransition
+num matches 0 path /NodeList/4/DeviceList/0/AccessRrc/UeMap/1/DataRadioBearerCreated
+num matches 0 path /NodeList/4/DeviceList/0/AccessRrc/UeMap/1/StateTransition
++0.002703999s 5 EpcIabApplication:DoInitialUeMessage(0xaaab14d012e0)
++0.002703999s 4 EpcIabApplication:RecvFromLocalS1apSocket(0xaaab14d012e0, 0xaaab14d00270)
++0.002703999s 4 EpcIabApplication:SendToS1uSocket(0xaaab14d012e0, 0xaaab1511eea0, 4294967295, 51, 1)
++0.002703999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 17)
++0.002703999s 4 EpcIabApplication:SendToS1uSocket(): SendToS1uSocket -1
+0xaaab14ce4eb0 RNTI 1 size 48 mcs 0 bitmap 72 rv 0 TBLER 0.991211 corrupted 1
++0.065015999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d824f0)
++0.065015999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.065015999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.065015999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4294967295 GTP header  version=1 [ PT  S  PN ], messageType=1, length=0, teid=4294967295, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.065015999s 4 EpcIabApplication:RecvFromS1uSocket():  ProcedureCode=41 LengthOfIEs=74 NumberOfIEs=4
++0.065015999s 4 EpcIabApplication:DoInitialContextSetupRequest(0xaaab14d012e0)
++0.065015999s 4 EpcIabApplication:DoInitialContextSetupRequest(): EpcIabApplication DoInitialContextSetupRequest for imsi 2 IAB 1
++0.065015999s 4 EpcIabApplication:DoInitialContextSetupRequest(): In EpcIabApplication DoInitialContextSetupRequest size of the erabToBeSetupList is 1
++0.065015999s 4 EpcIabApplication:DoInitialContextSetupRequest(): Setup erab for imsi 2 rnti 1
++0.299999999s -1 MmWaveHelper:AttachToSingleClosestEnb(0xaaab14cd7ed0)
++0.299999999s -1 MmWaveHelper:AttachToSingleClosestEnb(): mmWaveCellId 1
++0.299999999s -1 MmWaveHelper:AttachToSingleClosestEnb(): mmWaveCellId 2
++0.299999999s -1 MmWaveHelper:AttachToSingleClosestEnb(): mmWaveCellId 3
++0.299999999s -1 MmWaveHelper:AttachToSingleClosestEnb(): mmWaveCellId 4
+UE register to enb 3
+UE register to enb 3
++0.299999999s -1 MmWavePointToPointEpcHelper:ActivateEpsBearer(0xaaab14c6c5d0, 0xaaab14d21e90, 4)
++0.299999999s -1 MmWavePointToPointEpcHelper:ActivateEpsBearer():  UE IP address: 7.0.0.2
+num matches 0 path /NodeList/5/DeviceList/0/AccessRrc/UeMap/1/DataRadioBearerCreated
+num matches 0 path /NodeList/5/DeviceList/0/AccessRrc/UeMap/1/StateTransition
++0.302703999s 7 EpcIabApplication:DoInitialUeMessage(0xaaab14d11460)
++0.302703999s 5 EpcIabApplication:RecvFromLocalS1apSocket(0xaaab14d11460, 0xaaab14d10490)
++0.302703999s 5 EpcIabApplication:SendToS1uSocket(0xaaab14d11460, 0xaaab15494100, 4294967295, 51, 1)
++0.302703999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 17)
++0.302703999s 5 EpcIabApplication:SendToS1uSocket(): SendToS1uSocket 65
++0.303411999s 4 MmWaveIabNetDevice:ReceiveAccess(0xaaab14cedc30, 0xaaab1548b4e0)
++0.303411999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(0xaaab14d012e0)
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(): received packet with RNTI=1, BID=1 size 63
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(): iabRelatedMessage 1
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(): Removed GTP header  version=1 [ PT  S  PN ], messageType=1, length=55, teid=4294967295, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(): EpcIabApplication recognizes this s1apHeader  ProcedureCode=71 LengthOfIEs=45 NumberOfIEs=9 in imsi 1
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(): EpcIabApplication RecvFromLteSocket RNTI 1 IMSI 1 children list has 1 entries
++0.303411999s 4 EpcIabApplication:RecvFromLteSocket(): This is an S1AP packet related to imsi 4, forward to MME
++0.303411999s 4 EpcIabApplication:RecvFromLocalS1apSocket(0xaaab14d012e0, 0xaaab14d00270)
++0.303411999s 4 EpcIabApplication:SendToS1uSocket(0xaaab14d012e0, 0xaaab1548b4e0, 4294967295, 59, 1)
++0.303411999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 17)
++0.303411999s 4 EpcIabApplication:SendToS1uSocket(): SendToS1uSocket 73
++0.334815999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154a2b00)
++0.334815999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.334815999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.334815999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4294967295 GTP header  version=1 [ PT  S  PN ], messageType=1, length=0, teid=4294967295, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.334815999s 4 EpcIabApplication:RecvFromS1uSocket():  ProcedureCode=41 LengthOfIEs=74 NumberOfIEs=4
++0.334815999s 4 EpcIabApplication:DoForwardIabS1apReply(): S1ap header:  ProcedureCode=41 LengthOfIEs=74 NumberOfIEs=4
++0.334815999s 4 EpcIabApplication:DoForwardIabS1apReply(): Forward INITIAL CONTEXT SETUP REQUEST
++0.334815999s 4 EpcIabApplication:DoForwardIabS1apReply(): EpcIabApplication::DoForwardIabS1apReply S1ap Initial Context Setup Request  MmeUeS1Id = 4 EnbUeS1Id = 0 IAB = 0 NumOfBearers = 1 [] imsi 4 iab 0
++0.334815999s 4 EpcIabApplication:DoForwardIabS1apReply(): EpcIabApplication IMSI 1 RNTI 1 has 1 IAB children
++0.334815999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d65540, 1, 1, 92)
++0.334815999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.335415999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154b61d0)
++0.335415999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.335415999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.335415999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4294967295 GTP header  version=1 [ PT  S  PN ], messageType=1, length=0, teid=4294967295, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.335415999s 5 EpcIabApplication:RecvFromS1uSocket():  ProcedureCode=41 LengthOfIEs=74 NumberOfIEs=4
++0.335415999s 5 EpcIabApplication:DoInitialContextSetupRequest(0xaaab14d11460)
++0.335415999s 5 EpcIabApplication:DoInitialContextSetupRequest(): EpcIabApplication DoInitialContextSetupRequest for imsi 4 IAB 0
++0.335415999s 5 EpcIabApplication:DoInitialContextSetupRequest(): In EpcIabApplication DoInitialContextSetupRequest size of the erabToBeSetupList is 1
++0.335415999s 5 EpcIabApplication:DoInitialContextSetupRequest(): Setup erab for imsi 4 rnti 1
++0.511931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab1548bda0)
++0.511931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.511931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.511931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.511931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d0cc80, 1, 1, 1440)
++0.511931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.512731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d65590)
++0.512731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.512731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.512731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.512731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab1541f4f0, 1, 1, 1428)
++0.512731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.531931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab1541f4f0)
++0.531931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.531931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.531931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.531931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d1ca50, 1, 1, 1440)
++0.531931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.532731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1511fc90)
++0.532731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.532731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.532731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.532731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab14d65500, 1, 1, 1428)
++0.532731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.551931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d1d120)
++0.551931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.551931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.551931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.551931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154e01a0, 1, 1, 1440)
++0.551931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.552731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154e2090)
++0.552731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.552731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.552731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.552731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab14d0cc80, 1, 1, 1428)
++0.552731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.571931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154d80a0)
++0.571931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.571931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.571931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.571931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab1548bd30, 1, 1, 1440)
++0.571931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.572731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154e1630)
++0.572731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.572731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.572731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.572731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154e4570, 1, 1, 1428)
++0.572731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.591931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d2a2e0)
++0.591931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.591931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.591931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.591931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154b6170, 1, 1, 1440)
++0.591931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.592731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1548b440)
++0.592731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.592731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.592731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.592731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154685f0, 1, 1, 1428)
++0.592731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.611931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d82bd0)
++0.611931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.611931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.611931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.611931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d65500, 1, 1, 1440)
++0.611931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.612731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14f8d870)
++0.612731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.612731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.612731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.612731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154678f0, 1, 1, 1428)
++0.612731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.631931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154679b0)
++0.631931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.631931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.631931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.631931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab15426f20, 1, 1, 1440)
++0.631931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.632731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1544a6b0)
++0.632731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.632731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.632731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.632731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154b7450, 1, 1, 1428)
++0.632731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.651931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154b6300)
++0.651931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.651931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.651931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.651931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab15426f20, 1, 1, 1440)
++0.651931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.652731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154678f0)
++0.652731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.652731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.652731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.652731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab1544a640, 1, 1, 1428)
++0.652731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.671931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154d8080)
++0.671931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.671931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.671931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.671931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d0cc80, 1, 1, 1440)
++0.671931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.672731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1548e270)
++0.672731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.672731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.672731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.672731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154de760, 1, 1, 1428)
++0.672731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.691931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154e0a80)
++0.691931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.691931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.691931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.691931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab15491150, 1, 1, 1440)
++0.691931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.692731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154dba80)
++0.692731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.692731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.692731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.692731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab153eef70, 1, 1, 1428)
++0.692731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.711931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab15415eb0)
++0.711931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.711931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.711931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.711931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154de720, 1, 1, 1440)
++0.711931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.712731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d1ca80)
++0.712731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.712731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.712731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.712731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154a17e0, 1, 1, 1428)
++0.712731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.731931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154b74c0)
++0.731931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.731931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.731931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.731931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d82c90, 1, 1, 1440)
++0.731931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.732731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154d8080)
++0.732731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.732731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.732731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.732731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab14f8d870, 1, 1, 1428)
++0.732731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.751931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154a1850)
++0.751931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.751931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.751931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.751931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d1ca80, 1, 1, 1440)
++0.751931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.752731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab15491150)
++0.752731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.752731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.752731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.752731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab1544a640, 1, 1, 1428)
++0.752731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.771931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14f8d870)
++0.771931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.771931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.771931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.771931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154a27b0, 1, 1, 1440)
++0.771931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.772731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154d7770)
++0.772731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.772731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.772731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.772731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab14d68d90, 1, 1, 1428)
++0.772731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.791931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154deb70)
++0.791931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.791931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.791931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.791931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154a17e0, 1, 1, 1440)
++0.791931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.792731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab15415eb0)
++0.792731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.792731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.792731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.792731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab15490dd0, 1, 1, 1428)
++0.792731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.811931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154685f0)
++0.811931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.811931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.811931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.811931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154df8e0, 1, 1, 1440)
++0.811931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.812731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154e5670)
++0.812731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.812731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.812731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.812731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154a1850, 1, 1, 1428)
++0.812731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.831931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab153eef30)
++0.831931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.831931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.831931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.831931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154b6170, 1, 1, 1440)
++0.831931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.832731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154d7750)
++0.832731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.832731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.832731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.832731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154b7450, 1, 1, 1428)
++0.832731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.851931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab153e93c0)
++0.851931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.851931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.851931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.851931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab15415eb0, 1, 1, 1440)
++0.851931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.852731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154a1850)
++0.852731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.852731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.852731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.852731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab1548bd70, 1, 1, 1428)
++0.852731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.871931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154b74c0)
++0.871931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.871931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.871931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.871931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154a5c90, 1, 1, 1440)
++0.871931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.872731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab15466f10)
++0.872731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.872731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.872731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.872731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154a8b00, 1, 1, 1428)
++0.872731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.891931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d2a2b0)
++0.891931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.891931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.891931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.891931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab1541f530, 1, 1, 1440)
++0.891931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.892731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1510fb30)
++0.892731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.892731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.892731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.892731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab14d2a320, 1, 1, 1428)
++0.892731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.911931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab153e93c0)
++0.911931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.911931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.911931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.911931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab15494100, 1, 1, 1440)
++0.911931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.912731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154dba80)
++0.912731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.912731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.912731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.912731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154a55f0, 1, 1, 1428)
++0.912731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.931931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab1541f530)
++0.931931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.931931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.931931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.931931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154d8410, 1, 1, 1440)
++0.931931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.932731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1511fc90)
++0.932731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.932731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.932731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.932731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154b6830, 1, 1, 1428)
++0.932731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.951931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154c9aa0)
++0.951931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.951931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.951931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.951931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d2a5a0, 1, 1, 1440)
++0.951931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.952731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d65540)
++0.952731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.952731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.952731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.952731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab15494100, 1, 1, 1428)
++0.952731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.971931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154b7450)
++0.971931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.971931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.971931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.971931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14f8d8b0, 1, 1, 1440)
++0.971931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.972731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d1c940)
++0.972731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.972731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.972731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.972731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154a1c40, 1, 1, 1428)
++0.972731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++0.991931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14f8d8b0)
++0.991931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++0.991931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++0.991931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.991931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab1544a890, 1, 1, 1440)
++0.991931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++0.992731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154685f0)
++0.992731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++0.992731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++0.992731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++0.992731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab15415fd0, 1, 1, 1428)
++0.992731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.011931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab15415fd0)
++1.011931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.011931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.011931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.011931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab1510fb30, 1, 1, 1440)
++1.011931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.012731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d2a2b0)
++1.012731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.012731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.012731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.012731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154c9aa0, 1, 1, 1428)
++1.012731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.031931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d1d120)
++1.031931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.031931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.031931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.031931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154a5c20, 1, 1, 1440)
++1.031931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.032731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1511fc50)
++1.032731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.032731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.032731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.032731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154ca1b0, 1, 1, 1428)
++1.032731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.051931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154b7450)
++1.051931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.051931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.051931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.051931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154c9aa0, 1, 1, 1440)
++1.051931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.052731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d2a2b0)
++1.052731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.052731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.052731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.052731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154b76c0, 1, 1, 1428)
++1.052731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.071931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab1548b470)
++1.071931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.071931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.071931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.071931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154b76c0, 1, 1, 1440)
++1.071931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.072731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab1544a890)
++1.072731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.072731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.072731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.072731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154c9aa0, 1, 1, 1428)
++1.072731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.091931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab15491150)
++1.091931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.091931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.091931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.091931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154d8710, 1, 1, 1440)
++1.091931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.092731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154ca1b0)
++1.092731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.092731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.092731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.092731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab1548e2a0, 1, 1, 1428)
++1.092731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.111931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154d8080)
++1.111931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.111931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.111931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.111931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154e0a40, 1, 1, 1440)
++1.111931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.112731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab154deb20)
++1.112731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.112731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.112731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.112731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab15122c40, 1, 1, 1428)
++1.112731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.131931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d68d90)
++1.131931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.131931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.131931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.131931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab14d82bd0, 1, 1, 1440)
++1.131931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.132731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab15466f10)
++1.132731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.132731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.132731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.132731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154b61b0, 1, 1, 1428)
++1.132731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.151931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab154b7490)
++1.151931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.151931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.151931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.151931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab153eef70, 1, 1, 1440)
++1.151931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.152731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d0cc80)
++1.152731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.152731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.152731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.152731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab14d1d120, 1, 1, 1428)
++1.152731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.171931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab1544a890)
++1.171931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.171931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.171931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.171931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab1548e370, 1, 1, 1440)
++1.171931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.172731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab153e93c0)
++1.172731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.172731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.172731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.172731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab154d8080, 1, 1, 1428)
++1.172731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
++1.191931999s 4 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14cedc30, 0xaaab14d68d90)
++1.191931999s 4 MmWaveIabNetDevice:GetAddress(0xaaab14cedc30)
++1.191931999s 4 EpcIabApplication:RecvFromS1uSocket(0xaaab14d012e0, 0xaaab14d010c0)
++1.191931999s 4 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.191931999s 4 EpcIabApplication:SendToLteSocket(0xaaab14d012e0, 0xaaab154a29a0, 1, 1, 1440)
++1.191931999s 4 MmWaveIabNetDevice:DoSend(0xaaab14cedc30, 03-06-ff:ff:ff:ff:ff:ff, 6)
++1.192731999s 5 MmWaveIabNetDevice:ReceiveBackhaul(0xaaab14bd9c40, 0xaaab14d2a360)
++1.192731999s 5 MmWaveIabNetDevice:GetAddress(0xaaab14bd9c40)
++1.192731999s 5 EpcIabApplication:RecvFromS1uSocket(0xaaab14d11460, 0xaaab14d11290)
++1.192731999s 5 EpcIabApplication:RecvFromS1uSocket(): RecvFromS1uSocket teid 4 GTP header  version=1 [ PT  S  PN ], messageType=255, length=1432, teid=4, sequenceNumber=0, nPduNumber=0, nextExtensionType=0
++1.192731999s 5 EpcIabApplication:SendToLteSocket(0xaaab14d11460, 0xaaab1544a6b0, 1, 1, 1428)
++1.192731999s 5 MmWaveIabNetDevice:DoSend(0xaaab14bd9c40, 03-06-ff:ff:ff:ff:ff:ff, 6)
+0xaaab14ce4eb0 RNTI 1 size 1776 mcs 28 bitmap 72 rv 0 TBLER 1 corrupted 1
+Total number of packets received at server 35
+EpcIabApplication:DoDispose(0xaaab14d012e0)
+EpcIabApplication:~EpcIabApplication(0xaaab14d012e0)
+EpcIabApplication:DoDispose(0xaaab14d11460)
+EpcIabApplication:~EpcIabApplication(0xaaab14d11460)
+EpcIabApplication:DoDispose(0xaaab14d21630)
+EpcIabApplication:~EpcIabApplication(0xaaab14d21630)
+MmWaveHelper:DoDispose(0xaaab14cd7ed0)
+MmWaveHelper:~MmWaveHelper(0xaaab14cd7ed0)
+MmWavePointToPointEpcHelper:DoDispose(0xaaab14c6c5d0)
+MmWavePointToPointEpcHelper:~MmWavePointToPointEpcHelper(0xaaab14c6c5d0)

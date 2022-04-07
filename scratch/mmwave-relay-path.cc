@@ -199,23 +199,23 @@ main (int argc, char *argv[])
   LogComponentEnableAll (LOG_PREFIX_FUNC);    // Prefix all trace prints with function.
   LogComponentEnableAll (LOG_PREFIX_NODE);    // Prefix all trace prints with simulation node.
   // LogComponentEnable("EpcEnbApplication", LOG_LEVEL_LOGIC);
-  LogComponentEnable("EpcIabApplication", LOG_LEVEL_LOGIC);    // Enable EpcIabApplication logging component with LOG_LOGIC (control flow tracing with functions) and above.
+  LogComponentEnable("EpcIabApplication", LOG_LEVEL_ALL);    // Enable EpcIabApplication logging component with LOG_LOGIC (control flow tracing with functions) and above.
   // LogComponentEnable("EpcSgwPgwApplication", LOG_LEVEL_LOGIC);
   // LogComponentEnable("EpcMmeApplication", LOG_LEVEL_LOGIC);
   // LogComponentEnable("EpcUeNas", LOG_LEVEL_LOGIC);
 
   // LogComponentEnable("LteEnbRrc", LOG_LEVEL_INFO);
   // LogComponentEnable("LteUeRrc", LOG_LEVEL_INFO);
-  LogComponentEnable("MmWaveHelper", LOG_LEVEL_LOGIC);
-  LogComponentEnable("MmWavePointToPointEpcHelper", LOG_LEVEL_LOGIC);
+  LogComponentEnable("MmWaveHelper", LOG_LEVEL_ALL);
+  LogComponentEnable("MmWavePointToPointEpcHelper", LOG_LEVEL_ALL);
   //LogComponentEnable("EpcS1ap", LOG_LEVEL_LOGIC);
   // LogComponentEnable("EpcTftClassifier", LOG_LEVEL_LOGIC);
   // LogComponentEnable("EpcGtpuHeader", LOG_LEVEL_INFO);
   // LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
   // LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
-  LogComponentEnable("UdpClient", LOG_LEVEL_INFO);
-  LogComponentEnable("UdpServer", LOG_LEVEL_INFO);
-  LogComponentEnable("MmWaveIabNetDevice", LOG_LEVEL_INFO);
+  // LogComponentEnable("UdpClient", LOG_LEVEL_INFO);
+  // LogComponentEnable("UdpServer", LOG_LEVEL_INFO);
+  LogComponentEnable("MmWaveIabNetDevice", LOG_LEVEL_ALL);
 
   
   CommandLine cmd;
@@ -401,10 +401,10 @@ main (int argc, char *argv[])
    */
 
   if (numRelays == 3) {
-      posWired = Vector(xUe2, yUe2, gnbHeight);
-      posIab1 = Vector(xUe2, yWired, gnbHeight);
-      posIab2 = Vector(xWired, yWired, gnbHeight);
-      posIab3 = Vector(xWired, yUe2, gnbHeight);
+      posWired = Vector(xWired, yUe2, gnbHeight);
+      posIab1 = Vector(xWired, yWired, gnbHeight);
+      posIab2 = Vector(xUe1, yWired, gnbHeight);
+      posIab3 = Vector(xUe1, yUe2, gnbHeight);
       posUe4 = Vector(xUe1, yUe1, gnbHeight);
   }
 
